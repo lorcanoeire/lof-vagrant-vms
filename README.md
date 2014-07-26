@@ -10,24 +10,29 @@ Installation
 * Ensure Vagrant proxy plugin is installed.
  
 ```ruby
-$ vagrant plugin install vagrant-proxyconf
+vagrant plugin install vagrant-proxyconf
 ```
 
 * Add 'trusty-orig' box e.g.
 
 ```ruby
-$ vagrant box add 'trusty-orig' trusty-server-cloudimg-amd64-vagrant-disk1.box
+vagrant box add 'trusty-orig' trusty-server-cloudimg-amd64-vagrant-disk1.box
 ```
 
 Startup
 ------
 
 ```ruby
-$ vagrant up
+vagrant up
 ```
 
 ```ruby
-$ vagrant provision
+vagrant provision
 ```
+
+```ruby
+vagrant ssh
+```
+
 
 
