@@ -13,10 +13,16 @@ Installation
 vagrant plugin install vagrant-proxyconf
 ```
 
-* Add 'trusty-orig' box e.g.
+* Add 'trusty-orig' or 'centos65' box e.g.
 
 ```ruby
 vagrant box add 'trusty-orig' trusty-server-cloudimg-amd64-vagrant-disk1.box
+```
+
+or
+
+```ruby
+vagrant box add centos65-lxc-puppet https://dl.dropboxusercontent.com/s/x1085661891dhkz/lxc-centos6.5-2013-12-02.box
 ```
 
 Startup
@@ -31,7 +37,7 @@ vagrant provision
 ```
 
 ```ruby
-vagrant ssh
+vagrant [[ssh]]
 ```
 
 
